@@ -7,13 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B7F85DDF95BB1E8285B5DD2 /* Pods_PlayerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21422130A7EBE4BDDE2C5458 /* Pods_PlayerTest.framework */; };
 		3105A12F1E977BB1003C7AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105A12E1E977BB1003C7AD8 /* AppDelegate.swift */; };
-		3105A1311E977BB1003C7AD8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105A1301E977BB1003C7AD8 /* ViewController.swift */; };
+		3105A1311E977BB1003C7AD8 /* AVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105A1301E977BB1003C7AD8 /* AVPlayerViewController.swift */; };
 		3105A1341E977BB1003C7AD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3105A1321E977BB1003C7AD8 /* Main.storyboard */; };
 		3105A1361E977BB1003C7AD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3105A1351E977BB1003C7AD8 /* Assets.xcassets */; };
 		3105A1391E977BB1003C7AD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3105A1371E977BB1003C7AD8 /* LaunchScreen.storyboard */; };
 		3105A1441E977BB1003C7AD8 /* PlayerTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105A1431E977BB1003C7AD8 /* PlayerTestTests.swift */; };
 		3105A14F1E977BB1003C7AD8 /* PlayerTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105A14E1E977BB1003C7AD8 /* PlayerTestUITests.swift */; };
+		3105A15D1E977D3A003C7AD8 /* EKWAVPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105A15C1E977D3A003C7AD8 /* EKWAVPlayer.swift */; };
+		3105A1611E977EE7003C7AD8 /* EKWCacheSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105A1601E977EE7003C7AD8 /* EKWCacheSessionManager.swift */; };
+		3105A1651E978AD6003C7AD8 /* EKWNetworkReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105A1641E978AD6003C7AD8 /* EKWNetworkReachabilityManager.swift */; };
+		3105A1691E978D1A003C7AD8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3105A1681E978D1A003C7AD8 /* AVFoundation.framework */; };
+		3105A1771E9B7C54003C7AD8 /* EKWDownLoadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105A1761E9B7C54003C7AD8 /* EKWDownLoadVC.swift */; };
+		3105A17B1E9B8ADA003C7AD8 /* EKWDownloadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3105A17A1E9B8ADA003C7AD8 /* EKWDownloadTask.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		143556454E4A3731A4B306B6 /* Pods-PlayerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-PlayerTest/Pods-PlayerTest.release.xcconfig"; sourceTree = "<group>"; };
+		21422130A7EBE4BDDE2C5458 /* Pods_PlayerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PlayerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3105A12B1E977BB1003C7AD8 /* PlayerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlayerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3105A12E1E977BB1003C7AD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3105A1301E977BB1003C7AD8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3105A1301E977BB1003C7AD8 /* AVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerViewController.swift; sourceTree = "<group>"; };
 		3105A1331E977BB1003C7AD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3105A1351E977BB1003C7AD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3105A1381E977BB1003C7AD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +56,14 @@
 		3105A14A1E977BB1003C7AD8 /* PlayerTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlayerTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3105A14E1E977BB1003C7AD8 /* PlayerTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerTestUITests.swift; sourceTree = "<group>"; };
 		3105A1501E977BB1003C7AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3105A15C1E977D3A003C7AD8 /* EKWAVPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKWAVPlayer.swift; sourceTree = "<group>"; };
+		3105A1601E977EE7003C7AD8 /* EKWCacheSessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKWCacheSessionManager.swift; sourceTree = "<group>"; };
+		3105A1641E978AD6003C7AD8 /* EKWNetworkReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKWNetworkReachabilityManager.swift; sourceTree = "<group>"; };
+		3105A1661E978D0D003C7AD8 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/PlayerTest-crlrmmhtrhczpngdkkgkwylvhttf/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		3105A1681E978D1A003C7AD8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3105A1761E9B7C54003C7AD8 /* EKWDownLoadVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKWDownLoadVC.swift; sourceTree = "<group>"; };
+		3105A17A1E9B8ADA003C7AD8 /* EKWDownloadTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EKWDownloadTask.swift; sourceTree = "<group>"; };
+		7DAC7A8DD86C31E25207CE83 /* Pods-PlayerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PlayerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PlayerTest/Pods-PlayerTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3105A1691E978D1A003C7AD8 /* AVFoundation.framework in Frameworks */,
+				2B7F85DDF95BB1E8285B5DD2 /* Pods_PlayerTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +100,8 @@
 				3105A1421E977BB1003C7AD8 /* PlayerTestTests */,
 				3105A14D1E977BB1003C7AD8 /* PlayerTestUITests */,
 				3105A12C1E977BB1003C7AD8 /* Products */,
+				B72883F8379077E43540D2F0 /* Pods */,
+				D8B984CF10797E7EEF91F482 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -98,7 +119,12 @@
 			isa = PBXGroup;
 			children = (
 				3105A12E1E977BB1003C7AD8 /* AppDelegate.swift */,
-				3105A1301E977BB1003C7AD8 /* ViewController.swift */,
+				3105A1301E977BB1003C7AD8 /* AVPlayerViewController.swift */,
+				3105A1761E9B7C54003C7AD8 /* EKWDownLoadVC.swift */,
+				3105A15C1E977D3A003C7AD8 /* EKWAVPlayer.swift */,
+				3105A1641E978AD6003C7AD8 /* EKWNetworkReachabilityManager.swift */,
+				3105A1601E977EE7003C7AD8 /* EKWCacheSessionManager.swift */,
+				3105A17A1E9B8ADA003C7AD8 /* EKWDownloadTask.swift */,
 				3105A1321E977BB1003C7AD8 /* Main.storyboard */,
 				3105A1351E977BB1003C7AD8 /* Assets.xcassets */,
 				3105A1371E977BB1003C7AD8 /* LaunchScreen.storyboard */,
@@ -125,6 +151,25 @@
 			path = PlayerTestUITests;
 			sourceTree = "<group>";
 		};
+		B72883F8379077E43540D2F0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7DAC7A8DD86C31E25207CE83 /* Pods-PlayerTest.debug.xcconfig */,
+				143556454E4A3731A4B306B6 /* Pods-PlayerTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D8B984CF10797E7EEF91F482 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3105A1681E978D1A003C7AD8 /* AVFoundation.framework */,
+				3105A1661E978D0D003C7AD8 /* Alamofire.framework */,
+				21422130A7EBE4BDDE2C5458 /* Pods_PlayerTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3105A1531E977BB1003C7AD8 /* Build configuration list for PBXNativeTarget "PlayerTest" */;
 			buildPhases = (
+				0EA6E4B3CD3DA674AAEBEFF9 /* [CP] Check Pods Manifest.lock */,
 				3105A1271E977BB1003C7AD8 /* Sources */,
 				3105A1281E977BB1003C7AD8 /* Frameworks */,
 				3105A1291E977BB1003C7AD8 /* Resources */,
+				F93CD8568A15D52FC1DE4B2A /* [CP] Embed Pods Frameworks */,
+				DE6A906A77C762AB655A987D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +241,7 @@
 				TargetAttributes = {
 					3105A12A1E977BB1003C7AD8 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 99PJ6X3Z7H;
 						ProvisioningStyle = Automatic;
 					};
 					3105A13E1E977BB1003C7AD8 = {
@@ -254,13 +303,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0EA6E4B3CD3DA674AAEBEFF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DE6A906A77C762AB655A987D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayerTest/Pods-PlayerTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F93CD8568A15D52FC1DE4B2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PlayerTest/Pods-PlayerTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3105A1271E977BB1003C7AD8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3105A1311E977BB1003C7AD8 /* ViewController.swift in Sources */,
+				3105A1311E977BB1003C7AD8 /* AVPlayerViewController.swift in Sources */,
+				3105A1611E977EE7003C7AD8 /* EKWCacheSessionManager.swift in Sources */,
+				3105A17B1E9B8ADA003C7AD8 /* EKWDownloadTask.swift in Sources */,
+				3105A15D1E977D3A003C7AD8 /* EKWAVPlayer.swift in Sources */,
 				3105A12F1E977BB1003C7AD8 /* AppDelegate.swift in Sources */,
+				3105A1651E978AD6003C7AD8 /* EKWNetworkReachabilityManager.swift in Sources */,
+				3105A1771E9B7C54003C7AD8 /* EKWDownLoadVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,9 +512,12 @@
 		};
 		3105A1541E977BB1003C7AD8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DAC7A8DD86C31E25207CE83 /* Pods-PlayerTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 99PJ6X3Z7H;
 				INFOPLIST_FILE = PlayerTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EKW.PlayerTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -422,9 +527,12 @@
 		};
 		3105A1551E977BB1003C7AD8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 143556454E4A3731A4B306B6 /* Pods-PlayerTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 99PJ6X3Z7H;
 				INFOPLIST_FILE = PlayerTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = EKW.PlayerTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -505,6 +613,7 @@
 				3105A1551E977BB1003C7AD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3105A1561E977BB1003C7AD8 /* Build configuration list for PBXNativeTarget "PlayerTestTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +622,7 @@
 				3105A1581E977BB1003C7AD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3105A1591E977BB1003C7AD8 /* Build configuration list for PBXNativeTarget "PlayerTestUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +631,7 @@
 				3105A15B1E977BB1003C7AD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
